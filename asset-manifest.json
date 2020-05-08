@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/react-blog-json-data/static/css/main.b6652379.chunk.css",
+    "main.js": "/react-blog-json-data/static/js/main.0219a2d2.chunk.js",
+    "main.js.map": "/react-blog-json-data/static/js/main.0219a2d2.chunk.js.map",
+    "runtime-main.js": "/react-blog-json-data/static/js/runtime-main.c24e3bf2.js",
+    "runtime-main.js.map": "/react-blog-json-data/static/js/runtime-main.c24e3bf2.js.map",
+    "static/js/2.2cf89fd4.chunk.js": "/react-blog-json-data/static/js/2.2cf89fd4.chunk.js",
+    "static/js/2.2cf89fd4.chunk.js.map": "/react-blog-json-data/static/js/2.2cf89fd4.chunk.js.map",
+    "index.html": "/react-blog-json-data/index.html",
+    "precache-manifest.3f6b388d5dfd1014dedcb5da142fc619.js": "/react-blog-json-data/precache-manifest.3f6b388d5dfd1014dedcb5da142fc619.js",
+    "service-worker.js": "/react-blog-json-data/service-worker.js",
+    "static/css/main.b6652379.chunk.css.map": "/react-blog-json-data/static/css/main.b6652379.chunk.css.map",
+    "static/js/2.2cf89fd4.chunk.js.LICENSE.txt": "/react-blog-json-data/static/js/2.2cf89fd4.chunk.js.LICENSE.txt",
+    "static/media/banner.png": "/react-blog-json-data/static/media/banner.498fb18a.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c24e3bf2.js",
+    "static/js/2.2cf89fd4.chunk.js",
+    "static/css/main.b6652379.chunk.css",
+    "static/js/main.0219a2d2.chunk.js"
+  ]
+}
