@@ -1,3 +1,10 @@
 .create-link p {
   text-decoration: underline;
+  text-align: justify;
+}
+
+/* make the side panel stick */
+.sticky-panel {
+  position: sticky;
+  top: 0;
 }

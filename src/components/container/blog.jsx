@@ -3,20 +3,9 @@
 // information will be passed down to reusable components in form of props
 // any event handler or function will be stored in here
 
-// this component renders only a single blog
+// this component renders a single blog
 
-// {
-//     "userId": 1,
-//     "id": 1,
-//     "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-//     "body": "quia et suscipit
-//     suscipit recusandae consequuntur expedita et cum
-//     reprehenderit molestiae ut ut quas totam
-//     nostrum rerum est autem sunt rem eveniet architecto"
-// http://jsonplaceholder.typicode.com/posts?id=1
-//     }
 import React from "react";
-// import axios from "axios";
 import RE from "../../banner.png";
 import BannerImage from "../common/bannerImage";
 import Title from "../common/title";
@@ -38,7 +27,7 @@ class Blog extends React.Component {
     function randomInteger(min, max) {
       return Math.floor(Math.random() * (max - min + 1)) + min;
     }
-    let index = randomInteger(0, Data.length);
+    let index = randomInteger(0, Data.length - 1);
     console.log(index);
     this.setState({
       blogData: [Data[index]],
@@ -46,59 +35,6 @@ class Blog extends React.Component {
     });
   }
 
-  // componentDidMount() {
-  //   axios
-  //     .get(
-  //       `https://jsonplaceholder.typicode.com/posts?id=${this.state.currentId}`
-  //     )
-  //     .then((response) => {
-  //       this.setState({
-  //         blogData: [...response.data],
-  //       });
-  //     });
-  //   this.generateRelatedLinks();
-  // }
-
-  // generateRelatedLinks = () => {
-  //   // this will be eliminated since the blog data itself will have related links
-  //   let relatedLinks = [];
-  //   console.log("generate link");
-  //   axios
-  //     .get("https://jsonplaceholder.typicode.com/posts?_page=1&_limit=5")
-  //     .then(({ data }) => {
-  //       relatedLinks = data.map((post) => {
-  //         return {
-  //           title: post.title,
-  //           id: post.id,
-  //         };
-  //       });
-  //       this.setState({
-  //         relatedLinks: [...relatedLinks],
-  //       });
-  //     });
-  // };
-
-  // changeBlog = (event) => {
-  //   //onclick event handler
-  //   // make api call and re render the blog
-  //   this.setState(
-  //     {
-  //       currentId: event.target.id,
-  //     },
-  //     () => {
-  //       //console.log make api call
-  //       axios
-  //         .get(
-  //           `https://jsonplaceholder.typicode.com/posts?id=${this.state.currentId}`
-  //         )
-  //         .then((response) => {
-  //           this.setState({
-  //             blogData: [...response.data],
-  //           });
-  //         });
-  //     }
-  //   );
-  // };
   changeBlog = (event) => {
     //onclick handler
     let blogData = Data.filter((blog) => {
@@ -120,7 +56,7 @@ class Blog extends React.Component {
               <div className="blog-elements">
                 <div className="blog-content">
                   <Title title={blog.title} />
-                  <BannerImage imageUrl={this.state.imageUrl} />
+                  <BannerImage imageUrl={blog.imageUrl} />
                   <Paragraph body={blog.content} />
                 </div>
                 <div className="side-panel">

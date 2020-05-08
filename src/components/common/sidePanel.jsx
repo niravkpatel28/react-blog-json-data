@@ -13,7 +13,7 @@ import "./sidePanel.style.css";
 // );
 
 const SidePanel = (props) => (
-  <div className="create-link">
+  <div className="create-link sticky-panel">
     <h1> Related Link</h1>
     {props.relatedLinks.map((link) => (
       <p key={link.id} onClick={props.changeBlog} id={link.id}>
